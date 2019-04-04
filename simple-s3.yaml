@@ -1,0 +1,7 @@
+Description: Simple S3 bucket
+
+Resources:
+  Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub simple-s3-${AWS::StackName}-${AWS::AccountId}
